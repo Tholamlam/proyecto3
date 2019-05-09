@@ -14,8 +14,8 @@ config.vm.define "lamp" do|lamp|
 
 lamp.vm.hostname = "lamp" # Setting up hostname
 lamp.vm.network "private_network", ip: "192.168.205.10" # Setting up machine's IP Address
-lamp.vm.provision :shell, path: "/scripts/lamp.sh" # Provisioning with script.sh
 end
 
+lamp.vm.provision :shell, path: "/scripts/lamp.sh" # Provisioning with script.sh
 # End Configuring
 end
