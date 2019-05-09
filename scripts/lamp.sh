@@ -10,8 +10,8 @@ sudo apt-get -y install apache2
 
 # Installing MySQL and it's dependencies, Also, setting up root password for MySQL as it will prompt to enter the password during installation
 
-sudo debconf-set-selections <<< 'mysql-server/root_password password ausias38'
-sudo debconf-set-selections <<< 'mysql-server/root_password_again password ausias38'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ausias38'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ausias38'
 sudo apt-get -y install mysql-server
 
 # Installing PHP and it's dependencies
